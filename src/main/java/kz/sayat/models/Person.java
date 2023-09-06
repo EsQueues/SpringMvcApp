@@ -19,15 +19,15 @@ public class Person {
     private int age;
     @NotEmpty(message = "You have to have email!")
     @Email(message = "Email should be valid!")
-    private String mail;
+    private String email;
 
 
 
-    public Person(int id, String name, int age, String mail) {
+    public Person(int id, String name, int age, String email) {
         this.id = id;
         this.name = name;
         this.age=age;
-        this.mail=mail;
+        this.email=email;
     }
     public int getAge() {
         return age;
@@ -37,12 +37,12 @@ public class Person {
         this.age = age;
     }
 
-    public String getMail() {
-        return mail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getId() {
